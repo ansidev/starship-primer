@@ -1,0 +1,112 @@
+#                                 
+
+format = """
+[](fg:#0969da bg:#0969da)\
+$username\
+[](fg:#0969da bg:#eac54f)\
+$directory\
+[](fg:#eac54f bg:#e44729)\
+$git_branch\
+$git_status\
+[ ](fg:#e44729)\
+"""
+
+right_format = """
+[](fg:#8250df)\
+$time\
+$all
+$character
+"""
+
+[username]
+show_always = true
+style_user = "fg:#ffffff bg:#0969da"
+style_root = "fg:#ffffff bg:#0969da"
+format = '[$user ]($style)'
+
+[directory]
+style = "fg:#000000 bg:#eac54f"
+format = "[ $path ]($style)"
+
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "fg:#ffffff bg:#e44729"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "fg:#ffffff bg:#e44729"
+format = '[$all_status$ahead_behind ]($style)'
+
+# Start languages and tools #
+
+[c]
+symbol = ""
+style = "fg:#ffffff bg:#840a2c"
+format = '[ $symbol ($version) ]($style)'
+
+[kubernetes]
+style = "fg:#ffffff bg:#326ce5"
+format = '[ on ﴱ ($user on )($cluster in )$context \($namespace\) ]($style)'
+disabled = false
+
+[gcloud]
+symbol = " "
+style = "fg:#ffffff bg:#0f9d58"
+format = '[ on $symbol $account(@$domain)(\($region\)) ]($style) '
+disabled = false
+
+[golang]
+symbol = ""
+style = "fg:#ffffff bg:#007d9c"
+format = '[ $symbol ($version) ]($style)'
+
+[java]
+symbol = ""
+style = "fg:#ffffff bg:#007396"
+format = '[ $symbol ($version) ]($style)'
+
+[lua]
+symbol = ""
+style = "fg:#ffffff bg:#000080"
+format = '[ $symbol ($version) ]($style)'
+
+[nodejs]
+symbol = ""
+style = "fg:#ffffff bg:#5fa04e"
+format = '[ $symbol ($version) ]($style)'
+
+[php]
+symbol = '🐘'
+style = "fg:#ffffff bg:#4F5B93"
+format = '[ $symbol ($version) ]($style)'
+
+[python]
+symbol = ''
+style = "fg:#000000 bg:#ffdf76"
+format = '[ $symbol ($version) ]($style)'
+
+[rust]
+symbol = ""
+style = "fg:#ffffff bg:#a72145"
+format = '[ $symbol ($version) ]($style)'
+
+# End languages and tools #
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "fg:#ffffff bg:#8250df"
+format = '[  $time ]($style)'
+
+[cmd_duration]
+style = "fg:#000000 bg:yellow"
+format = "[ took $duration ]($style)"
+
+[character]
+format = " $symbol"
