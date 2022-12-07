@@ -59,6 +59,7 @@ disabled = false
 symbol = " "
 style = "fg:#ffffff bg:#0f9d58"
 format = '[ on $symbol $account(@$domain)(\($region\)) ]($style) '
+# format = '[ on $symbol account@company.iam.gserviceaccount.com(\($region\)) ]($style) ' # for testing purposes
 disabled = false
 
 [golang]
