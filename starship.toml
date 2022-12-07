@@ -82,6 +82,12 @@ symbol = ""
 style = "fg:#ffffff bg:#5fa04e"
 format = '[ $symbol ($version) ]($style)'
 
+[package]
+symbol = ""
+style = "fg:#ffffff bg:#cb3837"
+format = '[ $symbol ($version) ]($style)'
+disabled = false
+
 [php]
 symbol = ''
 style = "fg:#ffffff bg:#4F5B93"
