@@ -23,10 +23,12 @@ show_always = true
 style_user = "fg:#ffffff bg:#0969da"
 style_root = "fg:#ffffff bg:#0969da"
 format = '[$user ]($style)'
+disabled = false
 
 [directory]
 style = "fg:#000000 bg:#eac54f"
 format = "[ $path ]($style)"
+disabled = false
 
 [directory.substitutions]
 "Documents" = " "
@@ -38,10 +40,12 @@ format = "[ $path ]($style)"
 symbol = ""
 style = "fg:#ffffff bg:#e44729"
 format = '[ $symbol $branch ]($style)'
+disabled = false
 
 [git_status]
 style = "fg:#ffffff bg:#e44729"
 format = '[$all_status$ahead_behind ]($style)'
+disabled = false
 
 # Start languages and tools #
 
@@ -49,6 +53,7 @@ format = '[$all_status$ahead_behind ]($style)'
 symbol = ""
 style = "fg:#ffffff bg:#840a2c"
 format = '[ $symbol ($version) ]($style)'
+disabled = false
 
 [kubernetes]
 style = "fg:#ffffff bg:#326ce5"
@@ -66,21 +71,25 @@ disabled = false
 symbol = ""
 style = "fg:#ffffff bg:#007d9c"
 format = '[ $symbol ($version) ]($style)'
+disabled = false
 
 [java]
 symbol = ""
 style = "fg:#ffffff bg:#007396"
 format = '[ $symbol ($version) ]($style)'
+disabled = false
 
 [lua]
 symbol = ""
 style = "fg:#ffffff bg:#000080"
 format = '[ $symbol ($version) ]($style)'
+disabled = false
 
 [nodejs]
 symbol = ""
 style = "fg:#ffffff bg:#5fa04e"
 format = '[ $symbol ($version) ]($style)'
+disabled = false
 
 [package]
 symbol = ""
@@ -92,16 +101,19 @@ disabled = false
 symbol = ''
 style = "fg:#ffffff bg:#4F5B93"
 format = '[ $symbol ($version) ]($style)'
+disabled = false
 
 [python]
 symbol = ''
 style = "fg:#000000 bg:#ffdf76"
 format = '[ $symbol ($version) ]($style)'
+disabled = false
 
 [rust]
 symbol = ""
 style = "fg:#ffffff bg:#a72145"
 format = '[ $symbol ($version) ]($style)'
+disabled = false
 
 # End languages and tools #
 
