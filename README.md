@@ -11,7 +11,8 @@ A configuration preset for [Starship](https://github.com/starship/starship).
 ## Supported languages/tools/configurations
 
 - Username.
-- Git.
+- Git Branch.
+- Git Status.
 - Time.
 - Languages and tools:
   - C.
@@ -21,6 +22,7 @@ A configuration preset for [Starship](https://github.com/starship/starship).
   - Java.
   - Lua.
   - NodeJS.
+  - Package Version.
   - PHP.
   - Python.
   - Rust.
