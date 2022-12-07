@@ -83,7 +83,7 @@ style = "fg:#ffffff bg:#5fa04e"
 format = '[ $symbol ($version) ]($style)'
 
 [php]
-symbol = '🐘'
+symbol = ''
 style = "fg:#ffffff bg:#4F5B93"
 format = '[ $symbol ($version) ]($style)'
 
